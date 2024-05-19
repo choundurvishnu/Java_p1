@@ -41,19 +41,21 @@ public class MovieService {
             movieToAdd.setGenres(movie.getGenres());
             movieToAdd.setRuntime(movie.getRuntime());
             movieToAdd.setCast(movie.getCast());
-            movie.setPoster(movie.getPoster());
+            movieToAdd.setPoster(movie.getPoster());
             movieToAdd.setTitle(movie.getTitle());
-            movie.setFullplot(movie.getFullplot());
-            movie.setLanguages(movie.getLanguages());
-            movie.setReleased(movie.getReleased());
-            movie.setDirectors(movie.getDirectors());
-            movie.setRated(movie.getRated());
-            movie.setLastupdated(movie.getLastupdated());
-            movie.setAwards(movie.getAwards());
-            movie.setCountries(movie.getCountries());
-            movie.setType(movie.getType());
-            movie.setImdb(movie.getImdb());
-            movie.setYear(movie.getYear());
+            movieToAdd.setFullplot(movie.getFullplot());
+            movieToAdd.setLanguages(movie.getLanguages());
+            movieToAdd.setReleased(movie.getReleased());
+            movieToAdd.setDirectors(movie.getDirectors());
+            movieToAdd.setRated(movie.getRated());
+            movieToAdd.setLastupdated(movie.getLastupdated());
+            movieToAdd.setAwards(movie.getAwards());
+            movieToAdd.setCountries(movie.getCountries());
+            movieToAdd.setType(movie.getType());
+            movieToAdd.setImdb(movie.getImdb());
+            movieToAdd.setTomatoes(movie.getTomatoes());
+            movieToAdd.setNum_mflix_comments(movie.getNum_mflix_comments());
+            movieToAdd.setYear(movie.getYear());
 
             return movieRepository.save(movieToAdd);
 
